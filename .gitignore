@@ -1,0 +1,25 @@
+# Compiled binaries
+bin/
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# Runtime data files written by the programs
+data/
+*.dat
+
+# Debug / build leftovers
+*.ilk
+*.pdb
+*.gch
+*.stackdump
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*~

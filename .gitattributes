@@ -1,0 +1,12 @@
+# Normalise line endings so the repo stays consistent across machines
+* text=auto
+
+*.c   text
+*.cpp text
+*.h   text
+*.md  text
+*.json text
+
+# Never touch binaries
+*.exe binary
+*.dat binary
