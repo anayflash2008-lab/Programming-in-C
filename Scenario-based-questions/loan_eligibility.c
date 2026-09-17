@@ -2,29 +2,30 @@
 
 int main()
 {
-    int cs, inc, ar, def, el;
-
-    // cs = credit score
-    // inc = annual family income
-    // ar = admission rank
-    // def = active loan default (1 = Yes, 0 = No)
-    // el = eligibility (1 = Eligible, 0 = Not Eligible)
+    int cs, inc, rank, def, el;
     printf("Enter credit score: ");
     scanf("%d", &cs);
-    printf("Enter annual family income: ");
+
+    printf("Enter family income: ");
     scanf("%d", &inc);
+
     printf("Enter admission rank: ");
-    scanf("%d", &ar);
-    printf("Has active loan default? (1 = Yes, 0 = No): ");
+    scanf("%d", &rank);
+
+    printf("Enter active loan default (1 = Yes, 0 = No): ");
     scanf("%d", &def);
 
-    //Checking Eligibility
     el = (cs >= 650) &&
-         ((inc > 300000) || (ar <= 1000)) &&
-         (def == 0);
-    printf("\nEligibility = %d\n", el);
-    if (el == 1)
+               ((inc > 300000) || (rank <= 1000)) &&
+               (def == 0);
+
+    printf("Eligibility = %d\n", el);
+
+    if (def == 1)
+        printf("Applicant is not eligible due to active loan default.\n");
+    else if (el == 1)
         printf("Applicant is eligible for the educational loan.\n");
     else
         printf("Applicant is not eligible for the educational loan.\n");
+
 }

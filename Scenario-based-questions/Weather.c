@@ -4,7 +4,7 @@ int main()
 {
     float at;
     char wt;
-    unsigned int art;
+    int art;
 
     printf("Enter ambient temperature (-40.0 to 85.0 C): ");
     scanf("%f", &at);
@@ -45,5 +45,4 @@ int main()
         printf("Accumulated rain ticks are out of range.\n");
     }
 
-    return 0;
 }
