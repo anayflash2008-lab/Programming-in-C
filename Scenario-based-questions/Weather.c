@@ -1,17 +1,22 @@
+/* Ambient temperature ranging between -40.0C and 85.0C with decimal precision.
+Wind direction encoded as a single compass code ('N', 'S', 'E', 'W').
+Total accumulated rain ticks (ranging from 0 up to 60,000).
+Questions:	
+Select the most memory-efficient C standard data types for each of the three variables, 
+justifying your choice based on data range and memory footprint. 
+*/
 #include <stdio.h>
 
 int main()
 {
-    float at;
-    char wt;
-    int art;
+    float at; /// Ambient temp
+    char wt; // Wind Dir
+    int art; // Accumulated rain ticks
 
     printf("Enter ambient temperature (-40.0 to 85.0 C): ");
     scanf("%f", &at);
-
     printf("Enter wind direction (N/S/E/W): ");
     scanf(" %c", &wt);
-
     printf("Enter accumulated rain ticks (0 to 60000): ");
     scanf("%u", &art);
 

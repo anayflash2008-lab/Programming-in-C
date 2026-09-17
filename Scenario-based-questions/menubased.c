@@ -1,3 +1,14 @@
+/*You are programming the user interface for an Automated Teller Machine (ATM) that performs banking operations. Upon inserting a card, the user is presented with the following options: 
+Deposit
+Withdraw
+Check Balance
+Exit 
+
+Questions:
+Write a structured C program using a switch statement that prompts the user for their choice and processes the selected transaction. 
+Implement safe balance validation under option 2 (Withdraw) to reject requests exceeding the current account balance.
+Ensure improper inputs (e.g., entering 5 or -1) are handled appropriately using the default label. 
+*/
 #include <stdio.h>
 
 int main()
