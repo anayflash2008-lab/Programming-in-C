@@ -5,7 +5,7 @@ int main() {
     int ar[5] = {10,20,30,40,50};
     int i, temp;
     int *p = ar;
-    int len = sizeof(ar) / sizeof(ar[0]);
+    int len = sizeof(ar) / sizeof(int);
 
     for(i = 0; i < len / 2; i++) {
         temp = *(p + i);
