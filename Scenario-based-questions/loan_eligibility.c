@@ -22,7 +22,7 @@ int main()
 
     printf("Enter active loan default (1 = Yes, 0 = No): ");
     scanf("%d", &def);
-    // Eligibility criteria(Considering he has no active loan )
+    // Eligibility criteria(Considering he has no active loan)
     el = (cs >= 650) &&
                ((inc > 300000) || (rank <= 1000)) &&
                (def == 0);
